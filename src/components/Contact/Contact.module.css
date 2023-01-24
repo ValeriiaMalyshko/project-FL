@@ -1,0 +1,89 @@
+.section {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f4f4f4;
+}
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+  margin-top: 0;
+  text-align: center;
+}
+.container {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.label {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.inputName,
+.inputEmail {
+  display: block;
+  padding: 16px 8px 16px 8px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #808080;
+  margin: 0;
+  border: none;
+}
+
+.btn {
+  width: 155px;
+  height: 57px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  background: #28a745;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (min-width: 320px) {
+  .section {
+    width: 320px;
+  }
+
+  .title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 69px;
+  }
+
+  .img {
+    width: 320px;
+    height: auto;
+    margin-bottom: 51px;
+  }
+  .container {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .inputName {
+    margin-bottom: 16px;
+    width: 264px;
+  }
+  .inputEmail {
+    margin-bottom: 24px;
+    width: 264px;
+  }
+  .btn {
+    margin-bottom: 25px;
+  }
+}

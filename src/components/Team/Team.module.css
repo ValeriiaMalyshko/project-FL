@@ -1,0 +1,137 @@
+.section {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pretitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  margin-top: 0;
+}
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #333333;
+  margin-top: 0;
+}
+.subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  margin-top: 0;
+}
+.list {
+  list-style: none;
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.img {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.card {
+  position: relative;
+  opacity: 0;
+  background-color: rgba(4, 4, 4, 0.5);
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+.card:hover {
+  opacity: 1;
+}
+.cardItem {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.icon {
+  fill: #ffffff;
+}
+
+.name {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}
+.position {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .section {
+    padding-top: 72px;
+    width: 320px;
+  }
+  .pretitle {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+  .title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+  .subtitle {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 63px;
+  }
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 50px;
+  }
+  .img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .card {
+    height: 186px;
+    width: 280px;
+  }
+  .name {
+    margin-bottom: 8px;
+  }
+}
