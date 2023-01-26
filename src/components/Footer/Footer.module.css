@@ -53,3 +53,13 @@
     line-height: 1.39;
   }
 }
+@media screen and (min-width: 1360px) {
+  .section {
+    width: 1320px;
+  }
+  .list {
+    margin-left: 552px;
+    margin-right: 552px;
+    margin-bottom: 10px;
+  }
+}

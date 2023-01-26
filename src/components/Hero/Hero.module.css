@@ -123,5 +123,19 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1360px) {
+  .section {
+    padding-top: 32px;
+    padding-bottom: 270px;
+    height: 466px;
+    width: 1360px;
+  }
+  .title {
+    margin-left: 418px;
+    margin-right: 418px;
+  }
+  .subtitle {
+    margin-left: 280px;
+    margin-right: 280px;
+  }
 }

@@ -116,3 +116,35 @@
     height: auto;
   }
 }
+@media screen and (min-width: 1360px) {
+  .section {
+    padding-top: 80px;
+    width: 1360px;
+  }
+  .pretitle {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+  .title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+  .subtitle {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 49px;
+  }
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 22px;
+    margin-bottom: 80px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  .img {
+    width: 420px;
+    height: auto;
+  }
+}

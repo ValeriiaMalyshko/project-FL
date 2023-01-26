@@ -13,7 +13,7 @@ export default function Team() {
       </p>
       <ul className={s.list}>
         <li className={s.item}>
-          <picture>
+          <picture className={s.picture}>
             <source
               srcSet={`
               ${require('../images/team/person1.webp')} 1x, 
@@ -29,7 +29,7 @@ export default function Team() {
             />
             <img src="#" alt="John Doe" className={s.img} />
           </picture>
-          <div>
+          <div className={s.overflow}>
             <ul className={s.card}>
               <li className={s.cardItem}>
                 <a href="https://uk-ua.facebook.com/" className={s.cardLink}>
@@ -65,7 +65,7 @@ export default function Team() {
           <p className={s.position}>President</p>
         </li>
         <li className={s.item}>
-          <picture>
+          <picture className={s.picture}>
             <source
               srcSet={`
               ${require('../images/team/person2.webp')} 1x, 
@@ -81,7 +81,7 @@ export default function Team() {
             />
             <img src="#" alt="Jane Doe" className={s.img} />
           </picture>
-          <div>
+          <div className={s.overflow}>
             <ul className={s.card}>
               <li className={s.cardItem}>
                 <a href="https://uk-ua.facebook.com/" className={s.cardLink}>
