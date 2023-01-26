@@ -8,7 +8,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.37;
   text-align: center;
   color: #333333;
   margin-top: 0;
@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 1.37;
   text-align: center;
   color: #333333;
   margin-top: 0;
@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.37;
   text-align: center;
   color: #333333;
   margin-top: 0;
@@ -63,7 +63,7 @@
   .subtitle {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
   .list {
     grid-template-columns: repeat(1, 1fr);
@@ -72,6 +72,47 @@
   }
   .img {
     width: 280px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 48px;
+    width: 768px;
+  }
+  .pretitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.35;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .img {
+    width: 223px;
     height: auto;
   }
 }

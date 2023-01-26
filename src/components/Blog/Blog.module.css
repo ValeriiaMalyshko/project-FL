@@ -1,32 +1,42 @@
+.picture {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
 .section {
   margin-left: auto;
   margin-right: auto;
   background: #0284d0;
-  border-radius: 0px;
 }
 .item {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.37;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 .title {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 1.37;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 .subtitle {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.37;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 .btn {
   width: 156px;
@@ -37,11 +47,17 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.37;
   color: #ffffff;
   background-color: #0284d0;
+  cursor: pointer;
 }
-
+.btn:hover,
+.btn:focus {
+  background-color: #ffffff;
+  border: 1px solid #0284d0;
+  color: #0284d0;
+}
 @media screen and (min-width: 320px) {
   .img {
     width: 320px;
@@ -68,5 +84,52 @@
   .btn {
     margin-left: 20px;
     margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .picture {
+    width: 368px;
+  }
+  .img {
+    width: 368px;
+    height: 493px;
+    object-fit: cover;
+    margin: 0;
+  }
+  .section {
+    width: 768px;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    margin-left: 32px;
+    margin-bottom: 16px;
+    margin-top: 59px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.35;
+    margin-left: 32px;
+    margin-bottom: 24px;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+  .btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    margin-left: 32px;
+    /* margin-bottom: 50px; */
   }
 }

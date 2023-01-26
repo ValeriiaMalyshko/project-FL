@@ -117,7 +117,7 @@ export default function Team() {
           <p className={s.position}>Vice President</p>
         </li>
         <li className={s.item}>
-          <picture>
+          <picture className={s.picture}>
             <source
               srcSet={`
               ${require('../images/team/person3.webp')} 1x, 
@@ -133,7 +133,7 @@ export default function Team() {
             />
             <img src="#" alt="Sreve Smith" className={s.img} />
           </picture>
-          <div>
+          <div className={s.overflow}>
             <ul className={s.card}>
               <li className={s.cardItem}>
                 <a href="https://uk-ua.facebook.com/" className={s.cardLink}>

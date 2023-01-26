@@ -1,3 +1,8 @@
+.picture {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
 .section {
   height: auto;
   margin-left: auto;
@@ -9,7 +14,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 48px;
+  line-height: 1.5;
   color: #333333;
   margin-top: 0;
   text-align: center;
@@ -34,7 +39,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 1.44;
   color: #808080;
   margin: 0;
   border: none;
@@ -47,24 +52,28 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.39;
   text-align: center;
   color: #ffffff;
   background: #28a745;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #2ebf4f;
 }
 @media screen and (min-width: 320px) {
   .section {
     width: 320px;
   }
-
   .title {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 69px;
   }
-
   .img {
     width: 320px;
     height: auto;
@@ -85,5 +94,52 @@
   }
   .btn {
     margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.35;
+    margin-top: 32px;
+    margin-right: 32px;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+  .picture {
+    width: 368px;
+  }
+  .img {
+    width: 368px;
+    height: 354px;
+    object-fit: cover;
+    margin: 0;
+  }
+  .container {
+    display: block;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .inputName {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    margin-bottom: 16px;
+    width: 320px;
+  }
+  .inputEmail {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    margin-bottom: 24px;
+    width: 320px;
+  }
+  .btn {
+    margin-bottom: 33px;
   }
 }

@@ -4,24 +4,26 @@ import s from './Blog.module.css';
 export default function Blog() {
   return (
     <section className={s.section} id="blog">
-      <picture>
-        <source
-          srcSet={`
+      <div>
+        <picture className={s.picture}>
+          <source
+            srcSet={`
               ${require('../images/home/blog.webp')} 1x, 
               ${require('../images/home/blog@2x.webp')} 2x
             `}
-          type="image/webp"
-        />
-        <source
-          srcSet={`
+            type="image/webp"
+          />
+          <source
+            srcSet={`
                 ${require('../images/home/blog.jpg')} 1x, 
                 ${require('../images/home/blog@2x.jpg')} 2x
               `}
-        />
-        <img src="#" alt="foto blog" className={s.img} />
-      </picture>
+          />
+          <img src="#" alt="foto blog" className={s.img} />
+        </picture>
+      </div>
       <div>
-        <p className={s.item}>What you are looking for</p>
+        <p className={s.item}>April 16 2020</p>
         <h2 className={s.title}>Blog Post One</h2>
         <p className={s.subtitle}>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,

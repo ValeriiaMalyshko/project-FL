@@ -16,12 +16,16 @@
 .icon {
   fill: #ffffff;
 }
+.icon:hover,
+.icon:focus {
+  fill: #28a745;
+}
 .title {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.37;
   text-align: center;
   color: #ffffff;
   margin: 0;
@@ -32,5 +36,20 @@
   }
   .list {
     margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 728px;
+  }
+  .list {
+    margin-left: 256px;
+    margin-right: 256px;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
   }
 }
