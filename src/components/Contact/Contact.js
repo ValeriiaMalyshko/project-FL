@@ -2,7 +2,12 @@ import React from 'react';
 import s from './Contact.module.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-// import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
 
 const Contact = () => {
   const formik = useFormik({
@@ -12,15 +17,21 @@ const Contact = () => {
     },
     validationSchema: Yup.object().shape({
       name: Yup.string()
-        .min(1, 'Must be at list 1 characters')
+        .min(3, 'Must be at least 3 characters')
         .max(20, 'Must be 20 characters or less')
-        .required('Required'),
+        .required('This is a required field'),
       email: Yup.string()
-        .min(10, 'Must be at list 10 characters')
-        .max(30, 'Must be 30 characters or less')
-        .required('Required'),
+        .email('Invalid email')
+        .required('This is a required field'),
     }),
-    onSubmit: async ({ name, email }, { resetForm }) => {
+    onSubmit: async ({ values }, { resetForm }) => {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...values }),
+      })
+        .then(() => alert('Success!'))
+        .catch(error => alert(error));
       resetForm();
     },
   });
@@ -48,6 +59,9 @@ const Contact = () => {
         <h2 className={s.title}>Request Callback</h2>
         <form onSubmit={formik.handleSubmit} className={s.container}>
           <label htmlFor="name" className={s.label}>
+            {formik.errors.name && formik.touched.name ? (
+              <div className={s.message}>{formik.errors.name}</div>
+            ) : null}
             <input
               className={s.inputName}
               id="name"
@@ -58,11 +72,11 @@ const Contact = () => {
               value={formik.values.name}
               onChange={formik.handleChange}
             />
-            {formik.errors.name && formik.touched.name ? (
-              <div className={s.message}>{formik.errors.title}</div>
-            ) : null}
           </label>
           <label htmlFor="email" className={s.label}>
+            {formik.errors.email && formik.touched.email ? (
+              <div className={s.message}>{formik.errors.email}</div>
+            ) : null}
             <input
               className={s.inputEmail}
               id="email"

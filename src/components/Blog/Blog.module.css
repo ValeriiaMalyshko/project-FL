@@ -147,7 +147,7 @@
   }
   .section {
     width: 1360px;
-    height: auto;
+    height: 460px;
     display: flex;
     flex-direction: row-reverse;
   }

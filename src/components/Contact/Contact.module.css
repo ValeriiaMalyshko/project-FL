@@ -30,7 +30,13 @@
   margin: 0;
   padding: 0;
 }
-
+.message {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+}
 .inputName,
 .inputEmail {
   display: block;
@@ -172,11 +178,11 @@
   }
   .inputName {
     margin-bottom: 25px;
-    width: 626px;
+    width: 642px;
   }
   .inputEmail {
     margin-bottom: 31px;
-    width: 626px;
+    width: 642px;
   }
   .btn {
     margin-bottom: 0;

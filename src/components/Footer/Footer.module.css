@@ -31,16 +31,13 @@
   margin: 0;
 }
 @media screen and (min-width: 320px) {
-  .section {
-    width: 280px;
-  }
   .list {
     margin-bottom: 12px;
   }
 }
 @media screen and (min-width: 768px) {
   .section {
-    width: 728px;
+    width: 768px;
   }
   .list {
     margin-left: 256px;
@@ -55,7 +52,7 @@
 }
 @media screen and (min-width: 1360px) {
   .section {
-    width: 1320px;
+    width: 1360px;
   }
   .list {
     margin-left: 552px;

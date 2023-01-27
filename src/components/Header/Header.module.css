@@ -1,3 +1,8 @@
+.scroll {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+}
 .container {
   margin: 0;
 }
@@ -65,10 +70,12 @@ link:focus {
 }
 
 @media screen and (min-width: 320px) {
-  .container {
+  .container,
+  .scroll {
+    width: 320px;
     margin-bottom: 62px;
-    margin-left: 22px;
-    margin-right: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
   .section {
     margin-bottom: 16px;
@@ -81,12 +88,14 @@ link:focus {
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .container,
+  .scroll {
+    width: 768px;
     margin-bottom: 314px;
     display: flex;
     justify-content: space-between;
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .section {
     margin: 0;
@@ -114,12 +123,14 @@ link:focus {
   }
 }
 @media screen and (min-width: 1360px) {
-  .container {
+  .container,
+  .scroll {
+    width: 1360px;
     margin-bottom: 199px;
     display: flex;
     justify-content: space-between;
-    margin-left: 28px;
-    margin-right: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
   .list {
