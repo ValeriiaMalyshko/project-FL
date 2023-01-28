@@ -81,7 +81,7 @@
 }
 @media screen and (min-width: 320px) {
   .section {
-    padding-top: 22px;
+    /* padding-top: 22px; */
     /* padding-bottom: 104px; */
     height: 533px;
     width: 320px;
@@ -100,7 +100,7 @@
 
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 16px;
+    /* padding-top: 16px; */
     /* padding-bottom: 378px; */
     height: 1024px;
     width: 768px;
@@ -125,7 +125,7 @@
 
 @media screen and (min-width: 1360px) {
   .section {
-    padding-top: 32px;
+    /* padding-top: 32px; */
     /* padding-bottom: 270px; */
     height: 768px;
     width: 1360px;
