@@ -3,11 +3,11 @@ import s from './Contact.module.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
+// const encode = data => {
+//   return Object.keys(data)
+//     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&');
+// };
 
 const Contact = () => {
   const formik = useFormik({
@@ -24,14 +24,19 @@ const Contact = () => {
         .email('Invalid email')
         .required('This is a required field'),
     }),
-    onSubmit: async ({ values }, { resetForm }) => {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', ...values }),
-      })
-        .then(() => alert('Success!'))
-        .catch(error => alert(error));
+    // onSubmit: async ({ values }, { resetForm }) => {
+    //   fetch('/', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //     body: encode({ 'form-name': 'contact', ...values }),
+    //   })
+    //     .then(() => alert('Success!'))
+    //     .catch(error => alert(error));
+    //   resetForm();
+    // },
+    onSubmit: ({ values }, { resetForm }) => {
+      console.log(values);
+      // alert('Success!');
       resetForm();
     },
   });
@@ -57,7 +62,11 @@ const Contact = () => {
       </div>
       <div>
         <h2 className={s.title}>Request Callback</h2>
-        <form onSubmit={formik.handleSubmit} className={s.container}>
+        <form
+          onSubmit={formik.handleSubmit}
+          className={s.container}
+          netlify="true"
+        >
           <label htmlFor="name" className={s.label}>
             {formik.errors.name && formik.touched.name ? (
               <div className={s.message}>{formik.errors.name}</div>
