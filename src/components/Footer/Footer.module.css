@@ -16,8 +16,7 @@
 .icon {
   fill: #ffffff;
 }
-.icon:hover,
-.icon:focus {
+.icon:hover {
   fill: #28a745;
 }
 .title {
