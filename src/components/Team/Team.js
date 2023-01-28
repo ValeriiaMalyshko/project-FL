@@ -13,23 +13,23 @@ export default function Team() {
       </p>
       <ul className={s.list}>
         <li className={s.item}>
-          <picture className={s.picture}>
-            <source
-              srcSet={`
+          <div className={s.overflow}>
+            <picture className={s.picture}>
+              <source
+                srcSet={`
               ${require('../images/team/person1.webp')} 1x, 
               ${require('../images/team/person1@2x.webp')} 2x
             `}
-              type="image/webp"
-            />
-            <source
-              srcSet={`
+                type="image/webp"
+              />
+              <source
+                srcSet={`
                 ${require('../images/team/person1.jpg')} 1x, 
                 ${require('../images/team/person1@2x.jpg')} 2x
               `}
-            />
-            <img src="#" alt="John Doe" className={s.img} />
-          </picture>
-          <div className={s.overflow}>
+              />
+              <img src="#" alt="John Doe" className={s.img} />
+            </picture>
             <ul className={s.card}>
               <li className={s.cardItem}>
                 <a href="https://uk-ua.facebook.com/" className={s.cardLink}>
@@ -65,23 +65,23 @@ export default function Team() {
           <p className={s.position}>President</p>
         </li>
         <li className={s.item}>
-          <picture className={s.picture}>
-            <source
-              srcSet={`
+          <div className={s.overflow}>
+            <picture className={s.picture}>
+              <source
+                srcSet={`
               ${require('../images/team/person2.webp')} 1x, 
               ${require('../images/team/person2@2x.webp')} 2x
             `}
-              type="image/webp"
-            />
-            <source
-              srcSet={`
+                type="image/webp"
+              />
+              <source
+                srcSet={`
                 ${require('../images/team/person2.jpg')} 1x, 
                 ${require('../images/team/person2@2x.jpg')} 2x
               `}
-            />
-            <img src="#" alt="Jane Doe" className={s.img} />
-          </picture>
-          <div className={s.overflow}>
+              />
+              <img src="#" alt="Jane Doe" className={s.img} />
+            </picture>
             <ul className={s.card}>
               <li className={s.cardItem}>
                 <a href="https://uk-ua.facebook.com/" className={s.cardLink}>
@@ -117,23 +117,23 @@ export default function Team() {
           <p className={s.position}>Vice President</p>
         </li>
         <li className={s.item}>
-          <picture className={s.picture}>
-            <source
-              srcSet={`
+          <div className={s.overflow}>
+            <picture className={s.picture}>
+              <source
+                srcSet={`
               ${require('../images/team/person3.webp')} 1x, 
               ${require('../images/team/person3@2x.webp')} 2x
             `}
-              type="image/webp"
-            />
-            <source
-              srcSet={`
+                type="image/webp"
+              />
+              <source
+                srcSet={`
                 ${require('../images/team/person3.jpg')} 1x, 
                 ${require('../images/team/person3@2x.jpg')} 2x
               `}
-            />
-            <img src="#" alt="Sreve Smith" className={s.img} />
-          </picture>
-          <div className={s.overflow}>
+              />
+              <img src="#" alt="Sreve Smith" className={s.img} />
+            </picture>
             <ul className={s.card}>
               <li className={s.cardItem}>
                 <a href="https://uk-ua.facebook.com/" className={s.cardLink}>
