@@ -36,7 +36,7 @@ const Contact = () => {
     // },
     onSubmit: ({ values }, { resetForm }) => {
       console.log(values);
-      // alert('Success!');
+      alert('Success!');
       resetForm();
     },
   });
